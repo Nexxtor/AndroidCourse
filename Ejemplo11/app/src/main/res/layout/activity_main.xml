@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+    <EditText
+            android:id="@+id/et_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/small_gap"
+            android:layout_marginTop="@dimen/small_gap"
+            android:layout_toStartOf="@+id/bt_save"
+            android:layout_toLeftOf="@+id/bt_save"
+            android:hint="@string/text_write" />
+
+    <Button
+            android:id="@+id/bt_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/et_option"
+            android:layout_alignParentRight="true"
+            android:text="@string/text_save" />
+
+    <Button
+            android:id="@+id/bt_write_internal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/bt_read_internal"
+            android:text="@string/text_write_internal" />
+
+    <Button
+            android:id="@+id/bt_read_internal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="@string/text_read_internal" />
+
+
+    <Button
+            android:id="@+id/bt_write_external"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/small_gap"
+            android:layout_toRightOf="@id/bt_read_internal"
+            android:text="@string/text_write_external" />
+
+    <TextView
+            android:id="@+id/tv_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Hello World!" />
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Ejemplo11</string>
+    <string name="preference_file_key">com.naldana.ejemplo11.PREFERENCE_FILE</string>
+    <string name="save_email_key">email</string>
+    <string name="text_write">Write !!</string>
+    <string name="text_save">save</string>
+    <string name="text_write_external">Write External</string>
+    <string name="text_write_internal">Write Internal</string>
+    <string name="text_read_internal">Read Internal File</string>
+</resources>
