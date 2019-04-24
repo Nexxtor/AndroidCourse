@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Ejemplo13</string>
+    <string name="action_save">save</string>
+    <string name="help_name">Name</string>
+    <string name="help_e_mail">Mail</string>
+    <string name="help_username">Username</string>
+    <string name="alert_person_not_saved">No se ha podido guardar. Inténtelo luego.</string>
+    <string name="alert_person_saved_success">Se ha guardado con éxito la persona #</string>
+    <string name="help_john_wick">John Wick</string>
+</resources>
