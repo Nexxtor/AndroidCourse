@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/small_gap"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/medium_gap"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/text_team_a"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_score_team_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_gap"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="@dimen/big_text" />
+
+
+            <Button
+                android:id="@+id/bt_team_a_3_p"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_gap"
+                android:onClick="addThreeTeamA"
+                android:text="@string/action_3_points" />
+
+            <Button
+                android:id="@+id/bt_team_a_2_p"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_gap"
+                android:onClick="addTwoTeamA"
+                android:text="@string/action_2_points" />
+
+            <Button
+                android:id="@+id/bt_team_a_free_throw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_gap"
+                android:onClick="addOneTeamA"
+                android:text="@string/action_free_throw" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/medium_gap"
+            android:layout_marginTop="@dimen/medium_gap"
+            android:layout_marginRight="@dimen/medium_gap"
+            android:background="#D8D4D4" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/medium_gap"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/text_team_b"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_score_team_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_gap"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="@dimen/big_text" />
+
+            <Button
+                android:id="@+id/bt_team_b_3_p"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_gap"
+                android:onClick="addThreeTeamB"
+                android:text="@string/action_3_points" />
+
+            <Button
+                android:id="@+id/bt_team_b_2_p"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_gap"
+                android:onClick="addTwoTeamB"
+                android:text="@string/action_2_points" />
+
+            <Button
+                android:id="@+id/bt_team_b_free_throw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_gap"
+                android:onClick="addOneTeamB"
+                android:text="@string/action_free_throw" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/medium_gap"
+        android:layout_marginBottom="@dimen/medium_gap"
+        android:onClick="resetScores"
+        android:text="@string/action_reset" />
+
+</LinearLayout>

@@ -21,4 +21,6 @@ object DatabaseContract {
         const val COLUMN_DISPLAYNAME = "displayname"
 
     }
+
+
 }
