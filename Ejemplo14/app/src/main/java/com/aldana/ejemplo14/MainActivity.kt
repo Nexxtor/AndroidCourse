@@ -15,7 +15,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        scoreViewModel = ViewModelProviders.of(this).get(ScoreViewModel::class.java)
+        scoreViewModel = ViewModelProviders.of(this)
+            .get(ScoreViewModel::class.java)
 
         displayScore(
             tv_score_team_a,

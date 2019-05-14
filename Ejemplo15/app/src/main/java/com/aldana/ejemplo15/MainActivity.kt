@@ -16,7 +16,9 @@ class MainActivity : AppCompatActivity(), SeasonBarFragment.OnTabListener {
 
         if (savedInstanceState == null) {
             var fragment: ClothesFragment = ClothesFragment.newInstance()
-            supportFragmentManager.beginTransaction().add(R.id.fl_content, fragment).commit()
+            supportFragmentManager
+                .beginTransaction()
+                .add(R.id.fl_content, fragment).commit()
         }
 
         bt_clothes.setOnClickListener {
@@ -38,14 +40,14 @@ class MainActivity : AppCompatActivity(), SeasonBarFragment.OnTabListener {
     }
 
     fun changeFragmentType() {
-        var fragment = if (viewModelSeason.clothesDisplay) {
+        var fragment = if (viewModelSeason.clothesDisplay){
             ClothesFragment.newInstance()
-
-        } else {
+        }else {
             PlanetFragment.newInstance()
-
         }
-
-        supportFragmentManager.beginTransaction().replace(R.id.fl_content, fragment).commit()
+        supportFragmentManager
+                .beginTransaction()
+                .replace(R.id.fl_content, fragment)
+                .commit()
     }
 }
