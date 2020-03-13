@@ -1,8 +1,0 @@
-<resources>
-    <string name="app_name">PokeDesk</string>
-    <string name="text_pokemon_number">Pokemon Number</string>
-    <string name="hint_type_pokemon_id">Type Pokemon ID</string>
-    <string name="action_search">search</string>
-    <string name="text_nothing_to_show">Nothing to show!</string>
-    <string name="text_not_found_message">Please enter a correct ID</string>
-</resources>

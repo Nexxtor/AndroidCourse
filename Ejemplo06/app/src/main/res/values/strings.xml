@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">Ejemplo06</string>
-    <string name="text_number_zero">0</string>
-    <string name="action_person">+1 Person</string>
-    <string name="text_inside">inside</string>
-    <string name="text_outside">outside</string>
-</resources>

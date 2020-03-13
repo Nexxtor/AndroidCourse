@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="card_view_radius">4dp</dimen>
-    <dimen name="carview_elevation">2dp</dimen>
-    <dimen name="small_gap">8dp</dimen>
-    <dimen name="important_text">18sp</dimen>
-</resources>
