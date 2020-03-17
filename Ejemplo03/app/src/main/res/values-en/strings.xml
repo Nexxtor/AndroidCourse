@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ejemplo03</string>
+    <string name="label_nombre">Name</string>
+    <string name="hint_nombre">Write your name</string>
+    <string name="action_enviar">send</string>
+    <string name="notification_nombre">Please, write your name before</string>
+</resources>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Ejemplo03</string>
+    <string name="label_nombre">Nombre</string>
+    <string name="hint_nombre">Ingrese su nombre</string>
+    <string name="action_enviar">Enviar</string>
+    <string name="notification_nombre">Por favor ingrese un nombre</string>
+</resources>
