@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:scaleType="centerCrop"
+        android:scaleType="center"
         android:src="@drawable/face_nestor" />
 
     <TextView

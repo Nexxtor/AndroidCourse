@@ -20,7 +20,8 @@ public class MainActivity extends AppCompatActivity {
         mContactButton = findViewById(R.id.bt_contact);
 
         mContactButton.setOnClickListener( v -> {
-            Intent intent = new Intent(this, SecondActivity.class);
+            Intent intent = new Intent(this,
+                    SecondActivity.class);
             startActivity(intent);
         });
     }

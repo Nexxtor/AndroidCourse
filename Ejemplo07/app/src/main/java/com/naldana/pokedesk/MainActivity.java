@@ -30,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
             if (pokemonNumber.isEmpty()) {
                 mResultText.setText(R.string.text_nothing_to_show);
             } else {
-
                 new FetchPokemonTask().execute(pokemonNumber);
             }
         });
@@ -58,6 +57,8 @@ public class MainActivity extends AppCompatActivity {
             }
 
             String ID = pokemonNumbers[0];
+
+
 
             URL pokeAPI = NetworkUtils.buildUrl(ID);
 

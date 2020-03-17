@@ -24,8 +24,8 @@
             android:layout_below="@id/tv_label_pokemon"
             android:layout_toLeftOf="@id/bt_search_pokemon"
             android:layout_alignParentLeft="true"
-            android:drawableStart="@mipmap/pikachu_icon"
-            android:drawableLeft="@mipmap/pikachu_icon"
+            android:drawableStart="@drawable/pikachu_icon"
+            android:drawableLeft="@drawable/pikachu_icon"
             android:drawablePadding="@dimen/small_gap"
             android:hint="@string/hint_type_pokemon_id"
             android:inputType="number" />
@@ -42,7 +42,7 @@
 
     </RelativeLayout>
 
-    <ScrollView
+    <FrameLayout
         android:layout_marginTop="@dimen/medium_gap"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -53,7 +53,7 @@
             android:layout_height="wrap_content"
             android:text="@string/text_nothing_to_show"/>
 
-    </ScrollView>
+    </FrameLayout>
 
 
 </LinearLayout>

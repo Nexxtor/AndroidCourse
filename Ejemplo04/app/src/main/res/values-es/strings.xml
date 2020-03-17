@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="text_email">Correo</string>
+    <string name="hint_text_your_email">Escribe tu correo</string>
+    <string name="hint_text_message">Escribe que necesitas</string>
+    <string name="text_message">Mensaje</string>
+    <string name="text_contact">Contacto</string>
+</resources>
