@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
 
@@ -21,19 +22,29 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun bindView() {
-        nameEditText =  findViewById(R.id.et_name)
+        nameEditText = findViewById(R.id.et_name)
         nameButton = findViewById(R.id.bt_send_name)
         nameDisplayTextView = findViewById(R.id.tv_display_name)
     }
 
-    fun addEventsListener(){
+    fun addEventsListener() {
         nameButton.setOnClickListener {
-            var name = nameEditText.text
+            val name = nameEditText.text
 
             if (name.isEmpty()) {
                 nameDisplayTextView.text = getString(R.string.notification_nombre)
+                Toast.makeText(
+                    applicationContext,
+                    getString(R.string.notification_nombre),
+                    Toast.LENGTH_SHORT
+                ).show()
             } else {
                 nameDisplayTextView.text = name
+                Toast.makeText(
+                    applicationContext,
+                    "Se guardao correctamente " + name,
+                    Toast.LENGTH_SHORT
+                ).show()
             }
         }
     }
